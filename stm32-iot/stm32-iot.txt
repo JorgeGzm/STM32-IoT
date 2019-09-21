@@ -1,0 +1,104 @@
+Configuration	stm32-iot
+STM32CubeMX 	5.2.1
+Date	07/04/2019
+MCU	STM32L475VGTx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+I2C2	I2C	I2C2_SCL	PB10
+I2C2	I2C	I2C2_SDA	PB11
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PH0-OSC_IN (PH0)
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PH1-OSC_OUT (PH1)
+SPI3	Full-Duplex Master	SPI3_MISO	PC11
+SPI3	Full-Duplex Master	SPI3_MOSI	PC12
+SPI3	Full-Duplex Master	SPI3_SCK	PC10
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14 (JTCK-SWCLK)
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13 (JTMS-SWDIO)
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART1	Asynchronous	USART1_RX	PB7
+USART1	Asynchronous	USART1_TX	PB6
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+12	PH0-OSC_IN (PH0)	RCC_OSC_IN	
+13	PH1-OSC_OUT (PH1)	RCC_OSC_OUT	
+39	PE8	GPIO_Output	WIFI_RESET
+47	PB10	I2C2_SCL	
+48	PB11	I2C2_SDA	
+52	PB13	GPIO_Output	
+53	PB14	GPIO_Output	LED2
+60	PD13	GPIO_Output	SPBTLE-RF-SPI3_CSN
+72	PA13 (JTMS-SWDIO)	SYS_JTMS-SWDIO	
+76	PA14 (JTCK-SWCLK)	SYS_JTCK-SWCLK	
+78	PC10	SPI3_SCK	SPI3_SCK
+79	PC11	SPI3_MISO	SPI3_MISO
+80	PC12	SPI3_MOSI	SPI3_MOSI
+91	PB5	GPIO_Output	SPSGRF-915-SPI3_CSN
+92	PB6	USART1_TX	
+93	PB7	USART1_RX	
+97	PE0	GPIO_Output	ISM43362-SPI3_CSN
+98	PE1	GPIO_EXTI1	ISM43362-DRDY_EXTI1
+PERIPHERALS	MODES	FUNCTIONS	PINS
+I2C2	I2C	I2C2_SCL	PB10
+I2C2	I2C	I2C2_SDA	PB11
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PH0-OSC_IN (PH0)
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PH1-OSC_OUT (PH1)
+SPI3	Full-Duplex Master	SPI3_MISO	PC11
+SPI3	Full-Duplex Master	SPI3_MOSI	PC12
+SPI3	Full-Duplex Master	SPI3_SCK	PC10
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14 (JTCK-SWCLK)
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13 (JTMS-SWDIO)
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+USART1	Asynchronous	USART1_RX	PB7
+USART1	Asynchronous	USART1_TX	PB6
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+12	PH0-OSC_IN (PH0)	RCC_OSC_IN	
+13	PH1-OSC_OUT (PH1)	RCC_OSC_OUT	
+39	PE8	GPIO_Output	WIFI_RESET
+47	PB10	I2C2_SCL	
+48	PB11	I2C2_SDA	
+52	PB13	GPIO_Output	
+53	PB14	GPIO_Output	LED2
+60	PD13	GPIO_Output	SPBTLE-RF-SPI3_CSN
+72	PA13 (JTMS-SWDIO)	SYS_JTMS-SWDIO	
+76	PA14 (JTCK-SWCLK)	SYS_JTCK-SWCLK	
+78	PC10	SPI3_SCK	SPI3_SCK
+79	PC11	SPI3_MISO	SPI3_MISO
+80	PC12	SPI3_MOSI	SPI3_MOSI
+91	PB5	GPIO_Output	SPSGRF-915-SPI3_CSN
+92	PB6	USART1_TX	
+93	PB7	USART1_RX	
+97	PE0	GPIO_Output	ISM43362-SPI3_CSN
+98	PE1	GPIO_EXTI1	ISM43362-DRDY_EXTI1
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : stm32-iot
+Project Folder : /work/STM32-IoT/stm32-iot
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_L4 V1.14.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
